@@ -1,20 +1,15 @@
 from turtle import *
 speed('fastest')
-pensize('3')
-for i in range(6):
-    pencolor('RED')
-    fd(100)
-
-    for i in range(6):
-         pencolor('BLACK')
-         fd(50)
+bgcolor('black')
+colors=['red','orange','yellow','green','blue','purple']
+i=0
+while True:
     
-         for i in range (6):
-             pencolor('BLUE')
-             fd(25)
-             lt(360/6)
-         lt(360/6)
-    lt(360/6) 
-             
+    pencolor(colors[i%6])
+    fd(10+i)
+    lt(80)
+    i+=1
+
+            
              
 mainloop()
